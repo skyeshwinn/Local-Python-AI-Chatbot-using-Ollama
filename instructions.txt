@@ -1,0 +1,10 @@
+Step 1: Download and install Ollama app in your PC locally.
+Step 2: Open a terminal or command prompt and type 'ollama' (not in quotes, just the word ollama). This will show up a list of available commands. Before typing this, make sure that you're in the correct folder where you've created the chatbot. 
+Step 3: Go to https://ollama.com/search and look for the available models where you can use one of these to build the chatbot. You should have atleast 8GB of RAM available in your PC to run the 7B models, 16GB to run the 13B models and 32GB to run the 33B models.
+Step 4: For my chatbot, I used the Mistral model. To execute this, make sure you've mentioned the correct model name in the code (main.py). In the same terminal, type 'ollama pull mistral'. After a few mins time, it will download this model for you.
+Step 5: To test the model, type 'ollama run mistral'. The cursor will redirect to the next line. Here you can type any questions and anything else that you want and you'll get a response. To exit, type '/bye' and you'll exit from the prompt.
+Step 6: Next, to create a virtual environment (folder name: chatbot), in the terminal, type 'python -m venv chatbot' and a new environment folder will be created.
+Step 7: To activate this environment, type (in command prompt) '.\chatbot\Scripts\activate.bat'. The environment folder name will be prefixed to your terminal. For Powershell, corresponding command name is '.\chatbot\Scripts\Activate.ps1'
+Step 8: To install the models, type 'pip install langchain langchain-ollama ollama'.
+Step 9: Next step is to run the script. To do that, in the terminal, type 'python main.py'. You can now chat with the chatbot!
+
